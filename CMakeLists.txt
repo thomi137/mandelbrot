@@ -3,4 +3,4 @@ project(Mandelbrot)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Mandelbrot main.cpp BitmapFileHeader.h BitmapInfoHeader.h Bitmap.cpp Bitmap.h)
+add_executable(Mandelbrot main.cpp BitmapFileHeader.h BitmapInfoHeader.h Bitmap.cpp Bitmap.h Mandelbrot.cpp Mandelbrot.h)

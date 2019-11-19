@@ -54,8 +54,15 @@ namespace thomit {
     }
 
     void Bitmap::setPixel(int x, int y, uint8_t red, uint8_t green, uint8_t blue) {
+        uint8_t* pPixel = m_pPixels.get();
+        pPixel += (y * 3) * m_width + (x * 3);
 
+        // .bmp is little endian
+        pPixel[0] = blue;
+        pPixel[1] = green;
+        pPixel[2] = red;
     }
+
 
     Bitmap::~Bitmap() = default;
 }
