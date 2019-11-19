@@ -1,8 +1,14 @@
 #include <iostream>
-#include "BitmapFileHeader.h"
-#include "BitmapInfoHeader.h"
+#include "Bitmap.h"
+
+using namespace std;
+using namespace thomit;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Bitmap bitmap(800, 680);
+    bitmap.write("test.bmp");
+
+    std::cout << "Finished." << std::endl;
     return 0;
 }
