@@ -9,7 +9,7 @@ namespace thomit {
 
     class Mandelbrot {
     public:
-        static const int MAX_ITERATIONS = 10000;
+        static const int MAX_ITERATIONS = 1000;
     public:
         Mandelbrot();
         virtual ~Mandelbrot();
